@@ -95,6 +95,12 @@ class BE_Subpages_Widget extends WP_Widget {
 		if( !isset( $instance['nest_subpages'] ) )
 			$instance['nest_subpages'] = 0;
 
+// BEGIN egifford 2015_01_19: Hard code the parent post into the subpages. Need to probably build on this and extend the plugin.
+		$parent_post = get_post( $parents[0] );
+		$parent_post->post_title = 'Overview';
+		array_unshift ( $subpages, $parent_post );
+// END egifford 2015_01_19
+
 		// Print the tree
 		$this->build_subpages( $subpages, $parents, $instance['deep_subpages'], $depth, $instance['nest_subpages'] );
 		
