@@ -1,13 +1,25 @@
 <?php
+/**
+ * BE Subpages Widget
+ *
+ * @author  Blue Blaze Associates
+ * @license GPL-2.0+
+ * @link    https://github.com/blueblazeassociates/be-subpages-widget
+ */
+
 /*
-Plugin Name: BE Subpages Widget
-Plugin URI: http://www.billerickson.net
-Description: Lists subpages of the current section
-Version: 1.6
-Author: Bill Erickson
-Author URI: http://www.billerickson.net
-License: GPLv2
-*/
+ * Plugin Name:       BE Subpages Widget
+ * Plugin URI:        http://www.billerickson.net
+ * Description:       Lists subpages of the current section
+ * Version:           1.6
+ * Author:            Bill Erickson
+ * Author URI:        http://www.billerickson.net
+ * License:           GPLv2
+ * GitHub Plugin URI: https://github.com/blueblazeassociates/be-subpages-widget
+ * GitHub Branch:     github
+ * Requires WP:       4.5
+ * Requires PHP:      5.6
+ */
 
 /** 
  * Register Widget
