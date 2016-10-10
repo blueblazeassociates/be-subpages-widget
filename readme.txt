@@ -1,9 +1,4 @@
 === BE Subpages Widget ===
-
-This is a fork of the BE Subpages Widget WordPress plugin (https://wordpress.org/plugins/be-subpages-widget/).
-
-This fork contains a composer.json file so that this plugin can be easily installed via Composer.
-
 Contributors: billerickson
 Tags: widget, subpages, menu
 Requires at least: 3.0
