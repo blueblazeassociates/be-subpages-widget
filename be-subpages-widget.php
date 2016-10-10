@@ -1,25 +1,13 @@
 <?php
-/**
- * BE Subpages Widget
- *
- * @author  Blue Blaze Associates
- * @license GPL-2.0+
- * @link    https://github.com/blueblazeassociates/be-subpages-widget
- */
-
 /*
- * Plugin Name:       BE Subpages Widget
- * Plugin URI:        http://www.billerickson.net
- * Description:       Lists subpages of the current section
- * Version:           1.6
- * Author:            Bill Erickson
- * Author URI:        http://www.billerickson.net
- * License:           GPLv2
- * GitHub Plugin URI: https://github.com/blueblazeassociates/be-subpages-widget
- * GitHub Branch:     github
- * Requires WP:       4.5
- * Requires PHP:      5.6
- */
+Plugin Name: BE Subpages Widget
+Plugin URI: http://www.billerickson.net
+Description: Lists subpages of the current section
+Version: 1.6
+Author: Bill Erickson
+Author URI: http://www.billerickson.net
+License: GPLv2
+*/
 
 /** 
  * Register Widget
@@ -106,12 +94,6 @@ class BE_Subpages_Widget extends WP_Widget {
 			
 		if( !isset( $instance['nest_subpages'] ) )
 			$instance['nest_subpages'] = 0;
-
-// BEGIN egifford 2015_01_19: Hard code the parent post into the subpages. Need to probably build on this and extend the plugin.
-		$parent_post = get_post( $parents[0] );
-		$parent_post->post_title = 'Overview';
-		array_unshift ( $subpages, $parent_post );
-// END egifford 2015_01_19
 
 		// Print the tree
 		$this->build_subpages( $subpages, $parents, $instance['deep_subpages'], $depth, $instance['nest_subpages'] );
