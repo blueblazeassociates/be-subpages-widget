@@ -1,8 +1,8 @@
 {
   "name"        : "blueblazeassociates/be-subpages-widget",
-  "description" : "This widget will dynamically list a section's subpages. When on a page, it will find the section's top level page and list its children.",
+  "description" : "BE Subpages Widget.  This widget will dynamically list a section's subpages. When on a page, it will find the section's top level page and list its children.",
   "type"        : "wordpress-plugin",
-  "homepage"    : "https://wordpress.org/plugins/be-subpages-widget/",
+  "homepage"    : "https://github.com/blueblazeassociates/be-subpages-widget",
   "license"     : "GPL-2.0+",
   "authors" : [{
       "name"     : "Bill Erickson",
@@ -22,7 +22,7 @@
     "widget"
   ],
   "replace" : {
-    "wpackagist-plugin/be-subpages-widget" : ">=1.5"
+    "wpackagist-plugin/be-subpages-widget" : "1.5,1.6"
   },
   "require" : {
     "php" : ">=5.6.24" 
